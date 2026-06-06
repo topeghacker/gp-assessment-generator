@@ -1,0 +1,195 @@
+        "framework": "Common Core (CCSS)",
+        "subject": "Mathematics",
+        "domains": [
+            {
+                "domain": "Algebra",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Geometry",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Functions",
+                "grades": [
+--
+        "framework": "Common Core (CCSS)",
+        "subject": "English Language Arts",
+        "domains": [
+            {
+                "domain": "Reading: Literature",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Writing",
+                "grades": [
+--
+        "framework": "Next Gen Science (NGSS)",
+        "subject": "Life Science",
+        "domains": [
+            {
+                "domain": "From Molecules to Organisms",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Ecosystems",
+                "grades": [
+--
+        "framework": "AERO Standards",
+        "subject": "Mathematics",
+        "domains": [
+            {
+                "domain": "Number and Operations",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Algebraic Thinking",
+                "grades": [
+--
+        "framework": "AERO Standards",
+        "subject": "English Language Arts",
+        "domains": [
+            {
+                "domain": "Reading for Information",
+                "grades": [
+--
+        "framework": "AP (Advanced Placement)",
+        "subject": "Biology",
+        "domains": [
+            {
+                "domain": "Chemistry of Life",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Cell Structure and Function",
+                "grades": [
+--
+        "framework": "AP (Advanced Placement)",
+        "subject": "Chemistry",
+        "domains": [
+            {
+                "domain": "Atomic Structure and Properties",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Chemical Reactions and Kinetics",
+                "grades": [
+--
+        "framework": "Cambridge IGCSE",
+        "subject": "Mathematics",
+        "domains": [
+            {
+                "domain": "Number",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Algebra and Graphs",
+                "grades": [
+--
+        "framework": "Cambridge AS & A Level",
+        "subject": "Mathematics",
+        "domains": [
+            {
+                "domain": "Pure Mathematics",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Mechanics",
+                "grades": [
+--
+        "framework": "Cambridge IGCSE",
+        "subject": "Science",
+        "domains": [
+            {
+                "domain": "Biology Core",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Chemistry Core",
+                "grades": [
+--
+        "framework": "MYP",
+        "subject": "Mathematics",
+        "domains": [
+            {
+                "domain": "Criterion A: Knowing and understanding",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Criterion B: Investigating patterns",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Criterion C: Communicating",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Criterion D: Applying mathematics in real-life contexts",
+                "grades": [
+--
+        "framework": "DP",
+        "subject": "Mathematics",
+        "domains": [
+            {
+                "domain": "Number and algebra",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Functions",
+                "grades": [
+--
+        "framework": "PYP",
+        "subject": "Mathematics",
+        "domains": [
+            {
+                "domain": "Data handling",
+                "grades": [
+--
+                    }
+                ]
+            },
+            {
+                "domain": "Measurement",
+                "grades": [

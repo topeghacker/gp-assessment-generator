@@ -1,0 +1,69 @@
+{
+  "entities": {
+    "question": {
+      "title": "Question",
+      "description": "A single question in the global question bank",
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "topic": { "type": "string" },
+        "standard": { "type": "string" },
+        "bloom": { "type": "string" },
+        "type": { "type": "string" },
+        "difficulty": { "type": "string" },
+        "options": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "answer": { "type": "string" },
+        "rationale": { "type": "string" },
+        "grade": { "type": "string" },
+        "subject": { "type": "string" },
+        "addedAt": { "type": "string" }
+      }
+    },
+    "examVersion": {
+      "title": "Exam Version",
+      "description": "A saved combination of questions creating a version of an exam",
+      "type": "object",
+      "properties": {
+        "version": { "type": "string" },
+        "subject": { "type": "string" },
+        "grade": { "type": "string" },
+        "questions": {
+          "type": "array",
+          "items": {
+             "type": "object"
+          }
+        },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "standard": {
+      "title": "Academic Standard",
+      "description": "An AI generated academic standard",
+      "type": "object",
+      "properties": {
+        "code": { "type": "string" },
+        "description": { "type": "string" },
+        "subject": { "type": "string" },
+        "grade": { "type": "string" },
+        "addedAt": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "questionBank": {
+      "schema": "question",
+      "description": "Global pool of questions across all grades and subjects."
+    },
+    "examVersions": {
+      "schema": "examVersion",
+      "description": "Saved exam versions created by users."
+    },
+    "standards": {
+      "schema": "standard",
+      "description": "Saved standards."
+    }
+  }
+}
