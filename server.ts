@@ -5,20 +5,35 @@ import { GoogleGenAI } from "@google/genai";
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 
   app.use(express.json({ limit: '10mb' }));
 
-  // Test route 
-  app.get("/api/sleep", async (req, res) => {
-    await new Promise(r => setTimeout(r, 65000));
-    res.json({ status: "ok" });
+  // Request timeout middleware
+  app.use((req, res, next) => {
+    res.setTimeout(120000, () => {
+      res.status(408).json({ error: "Request timeout." });
+    });
+    next();
+  });
+
+  // Health check route
+  app.get("/api/health", (req, res) => {
+    res.json({ status: "ok", timestamp: new Date().toISOString() });
   });
 
   // API routes
   app.post("/api/generate", async (req, res) => {
     try {
       const { prompt, maxOutputTokens = 8000, apiProvider, apiKey: clientApiKey, apiUrl, apiModel, useSearch } = req.body;
+      
+      // Input validation
+      if (!prompt || typeof prompt !== 'string' || prompt.trim().length === 0) {
+        return res.status(400).json({ error: "Prompt is required and must be a non-empty string." });
+      }
+      if (prompt.length > 100000) {
+        return res.status(400).json({ error: "Prompt exceeds maximum allowed length." });
+      }
       
       const apiKey = clientApiKey || process.env.GEMINI_API_KEY || process.env.NVIDIA_API_KEY;
       if (!apiKey && !apiUrl) {
